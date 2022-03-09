@@ -723,6 +723,18 @@ export const ContactSection = styled.section`
     .github {
     }
   }
+
+  @media screen and (max-width: 570px) {
+    > div {
+      .contact-list {
+        width: 100%;
+        flex-direction: column;
+      }
+      .social-list {
+        width: 80%;
+      }
+    }
+  }
 `;
 
 export const FooterSection = styled.section`
