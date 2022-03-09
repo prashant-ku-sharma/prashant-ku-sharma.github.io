@@ -91,9 +91,9 @@ const ProjectDetail = ({ currInterest, setShow }) => {
           </div>
           <div>
             <p className="type">
-              TYPE: &nbsp;&nbsp;&nbsp;&nbsp;{currInterest.type}
+              Type: &nbsp;&nbsp;&nbsp;&nbsp;{currInterest.type}
             </p>
-            <p className="tech-stack">TECH STACK:</p>
+            <p className="tech-stack">Tech Stack:</p>
             <ul>
               {currInterest.techStack.map((tech) => (
                 <li key={tech.title}>
@@ -101,6 +101,25 @@ const ProjectDetail = ({ currInterest, setShow }) => {
                 </li>
               ))}
             </ul>
+            {currInterest.responsibilities ? (
+              <>
+                <p className="responsibilities">Responsibilities:</p>
+                <ul>
+                  {currInterest.responsibilities.map((res) => (
+                    <li key={res.title}>{res}</li>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <>
+                <p className="features">Features:</p>
+                <ul>
+                  {currInterest.features.map((res) => (
+                    <li key={res.title}>{res}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </div>
       </div>

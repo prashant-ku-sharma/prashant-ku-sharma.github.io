@@ -578,7 +578,7 @@ export const ProjectSection = styled.section`
             padding: 0.8em 2.1em;
             border-radius: 30px;
             color: #fff;
-            background-color: #333;
+            background-color: #03203c;
             box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
             transition: all 0.3s ease-in-out;
           }
@@ -599,11 +599,12 @@ export const ProjectSection = styled.section`
           }
         }
         .type {
-          margin: 40px 0 10px;
+          margin: 50px 0 10px;
           color: ${theme.dark.color};
         }
-        .tech-stack {
-          margin: 40px 0 10px;
+        .tech-stack, .responsibilities,
+        .features {
+          margin: 20px 0 10px;
           color: ${theme.dark.color};
           + ul {
             padding-left: 50px;
@@ -612,13 +613,18 @@ export const ProjectSection = styled.section`
             align-items: center;
 
             li {
+              list-style-type: disc;
               margin: 0 5px 0;
+              color: ${theme.dark.color};
             }
 
             img {
               max-width: 80px;
             }
           }
+        }
+        .tech-stack + ul li {
+          list-style-type: none;
         }
       }
     }

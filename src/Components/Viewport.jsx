@@ -15,8 +15,6 @@ export const Viewport = () => {
         </div>
         <div className="author-description">
           <h3>Full Stack Web Developer</h3>
-          {/* <h3>Full Stack Web Developer</h3>
-          <h3>Full Stack Web Developer</h3> */}
           <h1>Prashant Sharma</h1>
           <p>
             An enthusiastic, result-oriented &amp; innovative Full Stack Web

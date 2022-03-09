@@ -10,7 +10,6 @@ import frontend from "./Images/svgs/frontend.svg";
 import backend from "./Images/svgs/backend.svg";
 import dsa from "./Images/svgs/dsa.svg";
 
-import clock from "./Images/pngs/clock.png";
 import sudoku from "./Images/pngs/sudoku.png";
 import unbounce from "./Images/pngs/unbounce.png";
 import travel from "./Images/pngs/travel.png";
@@ -50,52 +49,11 @@ export const projectArray = [
       { title: "Javascript", image: javascript },
     ],
     type: "A collaborative project built with 2 other developers",
-    responsibilities: [],
-  },
-  {
-    image: travel,
-    title: "Travel Clone",
-    description: "An online travel package booking website.",
-    demoLink: "https://prashant-sharma-tws.github.io/travel",
-    codeLink: "https://github.com/ansari-saif/Travel",
-    techStack: [
-      { title: "HTML", image: html },
-      { title: "CSS", image: css },
-      { title: "Javascript", image: javascript },
+    responsibilities: [
+      "User sign-in and login page.",
+      "Developed the Landing page.",
+      "Use of animations for better user-experience.",
     ],
-    type: "A collaborative project built with 3 other developers",
-    responsibilities: [],
-  },
-  {
-    image: clock,
-    title: "Analog Clock",
-    description: "A clock for getting info of time.",
-    techStack: [
-      { title: "HTML", image: html },
-      { title: "CSS", image: css },
-      { title: "Javascript", image: javascript },
-    ],
-    demoLink: "https://prashant-sharma-tws.github.io/analog-clock",
-    codeLink: "https://github.com/Prashant-Sharma-TWS/Analog-Clock",
-    type: "A solo project.",
-    responsibilities: [],
-  },
-
-  {
-    image: sudoku,
-    title: "Sudoku",
-    description:
-      "A sudoku challenge for users, where they can solve and get them solved.",
-    techStack: [
-      { title: "HTML", image: html },
-      { title: "CSS", image: css },
-      { title: "Javascript", image: javascript },
-      { title: "React", image: react },
-    ],
-    demoLink: "https://prashant-sharma-tws.github.io/sudoku/",
-    codeLink: "https://github.com/Prashant-Sharma-TWS/sudoku",
-    type: "A solo project.",
-    responsibilities: [],
   },
   {
     image: policybazaar,
@@ -112,7 +70,48 @@ export const projectArray = [
     demoLink: "https://prashant-sharma-tws.github.io/policybazaar/",
     codeLink: "https://github.com/Prashant-Sharma-TWS/policybazaar",
     type: "A collaborative project built by a team of 4 under 4 days.",
-    responsibilities: [],
+    responsibilities: [
+      "User sign-in and login page.",
+      "Developed the Insurance and Quotes page.",
+      "Integrated the frontend with company database.",
+    ],
+  },
+  {
+    image: travel,
+    title: "Travel Clone",
+    description: "An online travel package booking website.",
+    demoLink: "https://prashant-sharma-tws.github.io/travel",
+    codeLink: "https://github.com/ansari-saif/Travel",
+    techStack: [
+      { title: "HTML", image: html },
+      { title: "CSS", image: css },
+      { title: "Javascript", image: javascript },
+    ],
+    type: "A collaborative project built with 3 other developers",
+    responsibilities: [
+      "Developed the Blog page.",
+      "Use of transition, animations and window's screen effects.",
+    ],
+  },
+  {
+    image: sudoku,
+    title: "Sudoku",
+    description:
+      "A sudoku challenge for users, where they can solve and get them solved.",
+    techStack: [
+      { title: "HTML", image: html },
+      { title: "CSS", image: css },
+      { title: "Javascript", image: javascript },
+      { title: "React", image: react },
+    ],
+    demoLink: "https://prashant-sharma-tws.github.io/sudoku/",
+    codeLink: "https://github.com/Prashant-Sharma-TWS/sudoku",
+    type: "A solo project.",
+    features: [
+      "User can solve a puzzle.",
+      "User can undo, redo and reset the puzzle.",
+      "User can get solution for a puzzle using auto-solve.",
+    ],
   },
 ];
 
