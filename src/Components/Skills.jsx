@@ -7,16 +7,33 @@ export const Skills = () => {
     <SkillSection id="skills">
       <SubHeading>Skills &amp; Interests</SubHeading>
       <div>
-        <SkillsCardContainer />
+        <Technologies />
+      </div>
+      <SubHeading>Proficiencies</SubHeading>
+      <div>
+        <Proficiencies />
       </div>
     </SkillSection>
   );
 };
 
-const SkillsCardContainer = () => {
+const Technologies = () => {
   return (
     <ul className="skill-card-container">
-      {skillArray.map((item) => (
+      {skillArray.technologies.map((item) => (
+        <li key={item.title}>
+          <img src={item.image} alt={item.title} />
+          <h3 className="skill-title">{item.title}</h3>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+const Proficiencies = () => {
+  return (
+    <ul className="skill-card-container">
+      {skillArray.proficiencies.map((item) => (
         <li key={item.title}>
           <img src={item.image} alt={item.title} />
           <h3 className="skill-title">{item.title}</h3>

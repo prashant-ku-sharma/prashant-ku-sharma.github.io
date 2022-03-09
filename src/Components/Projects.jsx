@@ -36,7 +36,12 @@ const ProjectCard = ({ item }) => {
         </div>
         <p className="project-description">{item.description}</p>
         <div className="btns">
-          <a className="demo" href={item.demoLink}>
+          <a
+            className="demo"
+            href={item.demoLink}
+            target="_blank"
+            rel="noreferrer"
+          >
             Demo
           </a>
           <a className="code" href={item.codeLink}>
@@ -51,16 +56,53 @@ const ProjectCard = ({ item }) => {
 
 const ProjectDetail = ({ currInterest, setShow }) => {
   return (
-    <div className="project-detail-section" onClick={() => setShow(false)}>
+    <div className="project-detail-section">
       <div>
-        <button
+        <div
+          className="close-modal"
           onClick={(e) => {
             e.stopPropagation();
             setShow(false);
           }}
         >
-          Close
-        </button>
+          <span></span>
+          <span></span>
+        </div>
+        <div>
+          <div>
+            <p className="curr-title">{currInterest.title}</p>
+            <div className="curr-image">
+              <img src={currInterest.image} alt={currInterest.title} />
+            </div>
+            <p className="curr-description">{currInterest.description}</p>
+            <div className="btns">
+              <a
+                className="demo"
+                href={currInterest.demoLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Demo
+              </a>
+              <a className="code" href={currInterest.codeLink}>
+                Code
+              </a>
+            </div>
+          </div>
+          <div>
+            <p className="type">
+              TYPE: &nbsp;&nbsp;&nbsp;&nbsp;{currInterest.type}
+            </p>
+            <p className="tech-stack">TECH STACK:</p>
+            <ul>
+              {currInterest.techStack.map((tech) => (
+                <li key={tech.title}>
+                  <img src={tech.image} alt={tech.title} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -332,6 +332,10 @@ export const SkillSection = styled.section`
   padding: 50px 0;
   background-color: ${theme.dark.background};
 
+  > h2:nth-of-type(2) {
+    margin-top: 40px;
+  }
+
   > div {
     width: 85%;
     margin: auto;
@@ -510,14 +514,113 @@ export const ProjectSection = styled.section`
     position: fixed;
     top: 0;
     z-index: 1000;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.8);
 
     > div {
-      width: 60%;
-      height: 100%;
+      width: 80%;
+      height: 88%;
       margin: auto;
+      padding: 20px 50px;
+      position: relative;
+      top: 10%;
       z-index: 1500;
-      background-color: orange;
+      background-color: #03203c;
+
+      .close-modal {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+        span {
+          width: 2px;
+          height: 34px;
+          position: absolute;
+          background-color: ${theme.dark.color};
+        }
+        span:nth-child(1) {
+          transform: rotate(45deg);
+        }
+        span:nth-child(2) {
+          transform: rotate(-45deg);
+        }
+      }
+
+      > div:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 60% 38%;
+        justify-content: space-between;
+        text-align: left;
+
+        .curr-title {
+          font-size: 24px;
+          color: ${theme.dark.color};
+        }
+        .curr-description {
+          font-size: 18px;
+          color: ${theme.dark.color};
+        }
+        .curr-image img {
+          width: 100%;
+          margin: 10px 0 10px;
+        }
+        .btns {
+          width: 100%;
+          margin: 30px 0 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          a {
+            font-size: 1em;
+            line-height: 1.2;
+            margin: 0 20px;
+            padding: 0.8em 2.1em;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+            transition: all 0.3s ease-in-out;
+          }
+
+          .demo {
+            border: 2px solid #007ced;
+            :hover {
+              background-color: #007ced;
+            }
+          }
+
+          .code {
+            border: 2px solid #d5d5d5;
+            :hover {
+              color: #222222;
+              background-color: #d5d5d5;
+            }
+          }
+        }
+        .type {
+          margin: 40px 0 10px;
+          color: ${theme.dark.color};
+        }
+        .tech-stack {
+          margin: 40px 0 10px;
+          color: ${theme.dark.color};
+          + ul {
+            padding-left: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            li {
+              margin: 0 5px 0;
+            }
+
+            img {
+              max-width: 80px;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -547,7 +650,7 @@ export const ProjectSection = styled.section`
 
 export const ContactSection = styled.section`
   width: 100%;
-  padding: 50px 0;
+  padding: 80px 0;
   text-align: center;
   background-color: ${theme.dark.background};
 
@@ -555,39 +658,48 @@ export const ContactSection = styled.section`
     width: 85%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
+    li {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+
+      a {
+        color: ${theme.dark.color};
+      }
+      span:nth-of-type(2) {
+        position: relative;
+        top: -8px;
+        font-size: 17px;
+        margin-left: 8px;
+      }
+    }
+
     .contact-list {
-      width: 400px;
-      margin-left: auto;
-      text-align: left;
+      width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .social-list {
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
 
-      > li {
-        display: flex;
-        align-items: center;
-        margin: 10px 0;
-
-        a {
-          color: ${theme.dark.color};
-        }
-
-        span:nth-of-type(2) {
-          position: relative;
-          top: -8px;
-          font-size: 17px;
-          margin-left: 8px;
-        }
-      }
-
-      .email {
-      }
-      .telephone {
-      }
-      .linkedin {
-      }
-      .github {
-      }
+    .email {
+    }
+    .telephone {
+    }
+    .linkedin {
+    }
+    .github {
     }
   }
 `;
