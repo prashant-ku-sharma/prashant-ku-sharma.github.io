@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.02d4ded6.css",
-    "main.js": "/static/js/main.1a8ac4a6.js",
+    "main.js": "/static/js/main.6b0ba746.js",
     "static/media/travel.png": "/static/media/travel.8186a3fde89780b89c88.png",
     "static/media/unbounce.png": "/static/media/unbounce.8243f6aae461cd435e37.png",
     "static/media/policybazaar.png": "/static/media/policybazaar.4115ac061604ac5a37b4.png",
@@ -19,10 +19,10 @@
     "static/media/css.svg": "/static/media/css.4bfc125c3b5a4ceb7d4db657d59b6f23.svg",
     "static/media/html.svg": "/static/media/html.fe3de12e0604ec02d8ebbcc4f958b04c.svg",
     "main.02d4ded6.css.map": "/static/css/main.02d4ded6.css.map",
-    "main.1a8ac4a6.js.map": "/static/js/main.1a8ac4a6.js.map"
+    "main.6b0ba746.js.map": "/static/js/main.6b0ba746.js.map"
   },
   "entrypoints": [
     "static/css/main.02d4ded6.css",
-    "static/js/main.1a8ac4a6.js"
+    "static/js/main.6b0ba746.js"
   ]
 }
