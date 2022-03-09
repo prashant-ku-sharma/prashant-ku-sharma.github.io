@@ -444,6 +444,7 @@ export const ProjectSection = styled.section`
         align-items: center;
 
         button {
+          min-width: 113px;
           font-size: 1em;
           line-height: 1.2;
           padding: 0.5em 1em;
@@ -518,11 +519,11 @@ export const ProjectSection = styled.section`
 
     > div {
       width: 80%;
-      height: 88%;
+      height: 90%;
       margin: auto;
       padding: 20px 50px;
       position: relative;
-      top: 10%;
+      top: 5%;
       z-index: 1500;
       background-color: #03203c;
 
@@ -602,7 +603,8 @@ export const ProjectSection = styled.section`
           margin: 50px 0 10px;
           color: ${theme.dark.color};
         }
-        .tech-stack, .responsibilities,
+        .tech-stack,
+        .responsibilities,
         .features {
           margin: 20px 0 10px;
           color: ${theme.dark.color};
@@ -630,23 +632,36 @@ export const ProjectSection = styled.section`
     }
   }
 
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 1070px) {
+    position: relative;
     > div {
       .project-card {
         width: 100%;
-        margin: 20px 0;
+      }
+    }
 
-        > img {
-          width: 100%;
-          border-radius: 10px;
-        }
-        .project-title {
-        }
-        .project-description {
-        }
-        .btns {
-          a {
-            font-size: 0.8em;
+    .project-detail-section {
+      overflow: auto;
+
+      > div {
+        height: auto;
+        padding: 50px 50px;
+
+        > div:nth-of-type(2) {
+          grid-template-columns: 100%;
+
+          .responsibilities,
+          .features {
+            + ul {
+              display: block;
+            }
+          }
+          .tech-stack {
+            + ul {
+              img {
+                max-width: 50px;
+              }
+            }
           }
         }
       }
