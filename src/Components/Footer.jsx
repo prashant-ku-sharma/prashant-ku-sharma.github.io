@@ -1,11 +1,11 @@
 import React from "react";
 import { FooterSection } from "../Elements/elements";
 
-export const Footer = () => {
+export const Footer = ({ currTheme }) => {
   const date = new Date();
 
   return (
-    <FooterSection>
+    <FooterSection currTheme={currTheme}>
       <div>
         <span>&copy; {date.getFullYear()} All rights reserved.</span>
       </div>

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { ProjectSection, SubHeading } from "../Elements/elements";
 import { projectArray } from "../data";
 
-export const Projects = () => {
+export const Projects = ({ currTheme }) => {
   return (
-    <ProjectSection id="projects">
+    <ProjectSection id="projects" currTheme={currTheme}>
       <SubHeading>Projects</SubHeading>
       <div>
         <div className="project-card-container">
@@ -114,8 +114,8 @@ const ProjectDetail = ({ currInterest, setShow }) => {
               <>
                 <p className="features">Features:</p>
                 <ul>
-                  {currInterest.features.map((res) => (
-                    <li key={res.title}>{res}</li>
+                  {currInterest.features.map((feat) => (
+                    <li key={feat.title}>{feat}</li>
                   ))}
                 </ul>
               </>

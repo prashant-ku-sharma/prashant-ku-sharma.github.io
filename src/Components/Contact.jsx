@@ -1,12 +1,12 @@
 import React from "react";
 import { ContactSection, SubHeading } from "../Elements/elements";
-import { MdEmail } from "react-icons/md";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import email from "../Images/icons/email.png";
+import telephone from "../Images/icons/telephone.png";
 import { contactArray } from "../data";
 
-export const Contact = () => {
+export const Contact = ({ currTheme }) => {
   return (
-    <ContactSection id="contact">
+    <ContactSection id="contact" currTheme={currTheme}>
       <SubHeading>Get in Touch</SubHeading>
       <div>
         <ul className="contact-list">
@@ -17,7 +17,7 @@ export const Contact = () => {
               href="mailto:ps142500@gmail.com"
             >
               <span className="email">
-                <MdEmail size="30px" />
+                <img src={email} alt="email" width="30px" />
               </span>
               <span>ps142500@gmail.com</span>
             </a>
@@ -25,7 +25,7 @@ export const Contact = () => {
           <li key="7987343655">
             <a target="_blank" rel="noreferrer" href="tel:7987343655">
               <span className="email">
-                <BsFillTelephoneFill size="30px" />
+                <img src={telephone} alt="telephone" width="30px" />
               </span>
               <span>7987343655</span>
             </a>

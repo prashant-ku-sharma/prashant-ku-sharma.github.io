@@ -2,9 +2,9 @@ import React from "react";
 import { SkillSection, SubHeading } from "../Elements/elements";
 import { skillArray } from "../data";
 
-export const Skills = () => {
+export const Skills = ({ currTheme }) => {
   return (
-    <SkillSection id="skills">
+    <SkillSection id="skills" currTheme={currTheme}>
       <SubHeading>Skills &amp; Interests</SubHeading>
       <div>
         <Technologies />

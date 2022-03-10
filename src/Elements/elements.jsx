@@ -1,23 +1,12 @@
 import styled from "styled-components";
-
-export const theme = {
-  light: {
-    background: "#222",
-    color: "#eee",
-    profileBg: "#f8f5f1",
-  },
-  dark: {
-    background: "#222",
-    color: "#eee",
-    profileBg: "#151515",
-  },
-};
+import sun from "../Images/icons/sun.png";
+import moon from "../Images/icons/moon.png";
 
 export const SubHeading = styled.h2`
   font-size: 40px;
   letter-spacing: 4px;
   padding-bottom: 30px;
-  color: ${theme.light.color};
+  color: ${(props) => props.theme.fontColor};
 
   ::after {
     content: "";
@@ -36,8 +25,8 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #1a1a1a;
-  transition: all 2s ease-in-out;
+  background-color: ${(props) => props.theme.navbg};
+  box-shadow: 0px 0px 8px black;
 
   > div {
     width: 85%;
@@ -51,7 +40,7 @@ export const Nav = styled.nav`
       display: flex;
       align-items: center;
       font-size: 20px;
-      color: ${theme.dark.color};
+      color: ${(props) => props.theme.fontColor};
 
       span {
         width: 35px;
@@ -76,7 +65,7 @@ export const Nav = styled.nav`
 
       li {
         a {
-          color: ${theme.dark.color};
+          color: ${(props) => props.theme.fontColor};
         }
       }
     }
@@ -86,8 +75,8 @@ export const Nav = styled.nav`
     .switch {
       position: relative;
       display: inline-block;
-      width: 30px;
-      height: 17px;
+      width: 35px;
+      height: 20px;
       input {
         opacity: 0;
         width: 0;
@@ -105,12 +94,17 @@ export const Nav = styled.nav`
       }
       .slider::before {
         content: "";
-        width: 10px;
-        height: 10px;
+        background-image: url(${(props) =>
+          props.currTheme === "dark" ? moon : sun});
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+        width: 14px;
+        height: 14px;
         position: absolute;
         left: 4px;
-        bottom: 4px;
-        background-color: orange;
+        bottom: 3px;
+        border: 1px solid skyblue;
+        background-color: #000;
         -webkit-transition: 0.4s;
         transition: 0.4s;
       }
@@ -155,14 +149,14 @@ export const Nav = styled.nav`
         justify-content: space-around;
         align-items: end;
         padding: 8px 7px;
-        background: #444;
+        background: ${(props) => props.theme.cardbg};
         border-radius: 8px;
         box-shadow: 0 6px 16px rgba(141, 146, 155, 0.16);
         cursor: pointer;
         > span {
           display: block;
           height: 2px;
-          background-color: #eee;
+          background-color: ${(props) => props.theme.fontColor};
         }
         > span:nth-child(1) {
           width: 20px;
@@ -193,7 +187,7 @@ export const Nav = styled.nav`
       }
       .show-anime + ul {
         width: 100%;
-        height: 50%;
+        height: 55%;
         z-index: 90;
         position: fixed;
         top: 60px;
@@ -205,7 +199,7 @@ export const Nav = styled.nav`
         margin: 0;
         padding-top: 30px;
         padding-left: 7.5%;
-        background-color: #1a1a1a;
+        background-color: ${(props) => props.theme.navbg};
         scroll-behaviour: smooth;
         transition: all 0.8s ease-in-out;
 
@@ -221,7 +215,7 @@ export const ViewportSection = styled.section`
   width: 100%;
   height: 85%;
   padding: 50px 0;
-  background-color: ${theme.dark.background};
+  background-color: ${(props) => props.theme.bgColor};
 
   > div {
     width: 85%;
@@ -241,7 +235,7 @@ export const ViewportSection = styled.section`
         font-size: 35px;
         margin: 0 0 10px;
         letter-spacing: 2px;
-        color: ${theme.dark.color};
+        color: ${(props) => props.theme.fontColor};
       }
       h3 {
         font-size: 15px;
@@ -252,7 +246,7 @@ export const ViewportSection = styled.section`
       p {
         letter-spacing: 2px;
         line-height: 2em;
-        color: ${theme.dark.color};
+        color: ${(props) => props.theme.fontColor};
       }
       .resume {
         margin-top: 30px;
@@ -261,8 +255,8 @@ export const ViewportSection = styled.section`
           font-size: 1em;
           line-height: 1.2;
           padding: 0.8em 2.1em;
-          color: #fff;
-          background-color: #333;
+          color: ${(props) => props.theme.fontColor};
+          background-color: ${(props) => props.theme.cardbg};
           border: 2px solid #007ced;
           border-radius: 30px;
           box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
@@ -280,7 +274,8 @@ export const ViewportSection = styled.section`
       img {
         width: 100%;
         border-radius: 50%;
-        border: 10px solid #03203c;
+        border: 10px solid
+          ${(props) => (props.currTheme === "dark" ? "#03203c" : "#777")};
       }
     }
   }
@@ -330,7 +325,7 @@ export const ViewportSection = styled.section`
 export const SkillSection = styled.section`
   width: 100%;
   padding: 50px 0;
-  background-color: ${theme.dark.background};
+  background-color: ${(props) => props.theme.bgColor};
 
   > h2:nth-of-type(2) {
     margin-top: 40px;
@@ -351,9 +346,9 @@ export const SkillSection = styled.section`
         width: 165px;
         margin: 20px 35px;
         padding: 10px 0;
-        color: ${theme.dark.color};
-        background-color: #333;
-        border: 2px solid #444;
+        color: ${(props) => props.theme.fontColor};
+        background-color: ${(props) => props.theme.cardbg};
+        border: 2px solid ${(props) => props.theme.cardborder};
         border-radius: 15px;
 
         > img[alt="React Router"] {
@@ -408,7 +403,7 @@ export const SkillSection = styled.section`
 export const ProjectSection = styled.section`
   width: 100%;
   padding: 50px 0 0;
-  background-color: ${theme.dark.background};
+  background-color: ${(props) => props.theme.bgColor};
 
   > div {
     width: 85%;
@@ -450,7 +445,7 @@ export const ProjectSection = styled.section`
           padding: 0.5em 1em;
           border-radius: 15px;
           border: 2px solid #007ced;
-          color: #fff;
+          color: ${(props) => props.theme.fontColor};
           background-color: transparent;
           box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
           transition: all 0.3s ease-in-out;
@@ -465,12 +460,12 @@ export const ProjectSection = styled.section`
       .project-title {
         letter-spacing: 2px;
         margin: 10px 0;
-        color: ${theme.dark.color};
+        color: ${(props) => props.theme.fontColor};
       }
 
       .project-description {
         margin: 8px 0;
-        color: ${theme.dark.color};
+        color: ${(props) => props.theme.fontColor};
       }
 
       .btns {
@@ -485,8 +480,8 @@ export const ProjectSection = styled.section`
           line-height: 1.2;
           padding: 0.8em 2.1em;
           border-radius: 30px;
-          color: #fff;
-          background-color: #333;
+          color: ${(props) => props.theme.fontColor};
+          background-color: ${(props) => props.theme.cardbg};
           box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
           transition: all 0.3s ease-in-out;
         }
@@ -501,7 +496,7 @@ export const ProjectSection = styled.section`
         .code {
           border: 2px solid #d5d5d5;
           :hover {
-            color: #222222;
+            color: ${(props) => props.theme.fontColor};
             background-color: #d5d5d5;
           }
         }
@@ -525,7 +520,8 @@ export const ProjectSection = styled.section`
       position: relative;
       top: 5%;
       z-index: 1500;
-      background-color: #03203c;
+      background-color: ${(props) =>
+        props.currTheme === "dark" ? "#03203c" : "#fff"};
 
       .close-modal {
         width: 30px;
@@ -537,7 +533,7 @@ export const ProjectSection = styled.section`
           width: 2px;
           height: 34px;
           position: absolute;
-          background-color: ${theme.dark.color};
+          background-color: ${(props) => props.theme.fontColor};
         }
         span:nth-child(1) {
           transform: rotate(45deg);
@@ -555,11 +551,11 @@ export const ProjectSection = styled.section`
 
         .curr-title {
           font-size: 24px;
-          color: ${theme.dark.color};
+          color: ${(props) => props.theme.fontColor};
         }
         .curr-description {
           font-size: 18px;
-          color: ${theme.dark.color};
+          color: ${(props) => props.theme.fontColor};
         }
         .curr-image img {
           width: 100%;
@@ -578,8 +574,8 @@ export const ProjectSection = styled.section`
             margin: 0 20px;
             padding: 0.8em 2.1em;
             border-radius: 30px;
-            color: #fff;
-            background-color: #03203c;
+            color: ${(props) => props.theme.fontColor};
+            background-color: ${(props) => props.theme.cardbg};
             box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
             transition: all 0.3s ease-in-out;
           }
@@ -594,20 +590,20 @@ export const ProjectSection = styled.section`
           .code {
             border: 2px solid #d5d5d5;
             :hover {
-              color: #222222;
+              color: ${(props) => props.theme.fontColor};
               background-color: #d5d5d5;
             }
           }
         }
         .type {
           margin: 50px 0 10px;
-          color: ${theme.dark.color};
+          color: ${(props) => props.theme.fontColor};
         }
         .tech-stack,
         .responsibilities,
         .features {
           margin: 20px 0 10px;
-          color: ${theme.dark.color};
+          color: ${(props) => props.theme.fontColor};
           + ul {
             padding-left: 50px;
             display: flex;
@@ -617,7 +613,7 @@ export const ProjectSection = styled.section`
             li {
               list-style-type: disc;
               margin: 0 5px 0;
-              color: ${theme.dark.color};
+              color: ${(props) => props.theme.fontColor};
             }
 
             img {
@@ -673,7 +669,7 @@ export const ContactSection = styled.section`
   width: 100%;
   padding: 80px 0;
   text-align: center;
-  background-color: ${theme.dark.background};
+  background-color: ${(props) => props.theme.bgColor};
 
   > div {
     width: 85%;
@@ -689,7 +685,7 @@ export const ContactSection = styled.section`
       margin: 10px 0;
 
       a {
-        color: ${theme.dark.color};
+        color: ${(props) => props.theme.fontColor};
       }
       span:nth-of-type(2) {
         position: relative;
@@ -742,11 +738,11 @@ export const FooterSection = styled.section`
   padding: 30px 0 50px;
   text-align: center;
   border-top: 2px solid #777;
-  background-color: ${theme.dark.background};
+  background-color: ${(props) => props.theme.bgColor};
 
   > div {
     width: 85%;
     margin: auto;
-    color: ${theme.dark.color};
+    color: ${(props) => props.theme.fontColor};
   }
 `;

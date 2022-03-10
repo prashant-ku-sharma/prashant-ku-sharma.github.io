@@ -119,7 +119,7 @@ export const contactArray = [
   {
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/prashant-kumar-sharma-/",
-    icon: <BsLinkedin size="30px" />,
+    icon: <BsLinkedin size="30px" fill="#0077b7" />,
     iconClass: "linkedin",
   },
   {
@@ -131,7 +131,7 @@ export const contactArray = [
   {
     title: "HackerRank",
     link: "https://www.hackerrank.com/Prashant_Sharma_",
-    icon: <FaHackerrank size="30px" />,
+    icon: <FaHackerrank size="30px" fill="#26b758" />,
     iconClass: "hackerrank",
   },
 ];

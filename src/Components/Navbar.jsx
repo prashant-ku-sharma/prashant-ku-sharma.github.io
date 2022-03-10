@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Nav } from "../Elements/elements";
 
-export const Navbar = () => {
+export const Navbar = ({ currTheme, handleTheme }) => {
   const [hamburger, setHamburger] = useState(false);
 
   return (
-    <Nav id="nav">
+    <Nav id="nav" currTheme={currTheme}>
       <div>
         <a href="/">
           <p>
@@ -36,16 +36,16 @@ export const Navbar = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
-          {/* <li className="toggle">
+          <li className="toggle">
             <label className="switch">
               <input
                 type="checkbox"
                 name="themeSwitch"
-                // onChange={handleChange}
+                onChange={handleTheme}
               />
               <span className="slider round"></span>
             </label>
-          </li> */}
+          </li>
         </ul>
       </div>
     </Nav>

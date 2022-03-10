@@ -2,9 +2,9 @@ import React from "react";
 import { ViewportSection } from "../Elements/elements";
 import author from "./../Images/author.png";
 
-export const Viewport = () => {
+export const Viewport = ({ currTheme }) => {
   return (
-    <ViewportSection>
+    <ViewportSection currTheme={currTheme}>
       <div>
         <div className="author-photo">
           <img
