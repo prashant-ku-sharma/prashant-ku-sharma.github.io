@@ -7,11 +7,7 @@ export const Viewport = ({ currTheme }) => {
     <ViewportSection currTheme={currTheme}>
       <div>
         <div className="author-photo">
-          <img
-            src={author}
-            // src="https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/cesar-rincon-1024x1024.jpg"
-            alt="AuthorPhoto"
-          />
+          <img src={author} alt="AuthorPhoto" />
         </div>
         <div className="author-description">
           <h3>Full Stack Web Developer</h3>
@@ -26,7 +22,7 @@ export const Viewport = ({ currTheme }) => {
           </p>
           <p className="resume">
             <a
-              href="https://drive.google.com/u/0/uc?id=1rZhyXv_SYkCVrQ6MFbmgFisZ6YyNbdO4&amp;export=download"
+              href={require("./../Images/Resume.pdf")}
               target="_blank"
               rel="noreferrer"
             >
