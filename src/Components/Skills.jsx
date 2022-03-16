@@ -5,7 +5,7 @@ import { skillArray } from "../data";
 export const Skills = ({ currTheme }) => {
   return (
     <SkillSection id="skills" currTheme={currTheme}>
-      <SubHeading>Skills &amp; Interests</SubHeading>
+      <SubHeading>Skills</SubHeading>
       <div>
         <Technologies />
       </div>

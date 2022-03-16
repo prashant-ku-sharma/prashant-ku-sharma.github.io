@@ -90,9 +90,7 @@ const ProjectDetail = ({ currInterest, setShow }) => {
             </div>
           </div>
           <div>
-            <p className="type">
-              Type: &nbsp;&nbsp;&nbsp;&nbsp;{currInterest.type}
-            </p>
+            <p className="type">{currInterest.type}</p>
             <p className="tech-stack">Tech Stack:</p>
             <ul>
               {currInterest.techStack.map((tech) => (

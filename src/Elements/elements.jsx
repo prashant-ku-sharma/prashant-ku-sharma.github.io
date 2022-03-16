@@ -18,6 +18,10 @@ export const SubHeading = styled.h2`
     top: 5px;
     background-color: orange;
   }
+
+  @media screen and (max-width: 570px) {
+    font-size: 30px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -31,7 +35,7 @@ export const Nav = styled.nav`
   > div {
     width: 85%;
     margin: auto;
-    height: 60px;
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,13 +47,14 @@ export const Nav = styled.nav`
       color: ${(props) => props.theme.fontColor};
 
       span {
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
         margin-right: 8px;
         display: inline-block;
         font-size: 28px;
         font-weight: 800;
-        line-height: 38px;
+        line-height: 50px;
+        letter-spacing: 1px;
         text-align: center;
         color: #fff;
         background-color: #007ced;
@@ -58,7 +63,7 @@ export const Nav = styled.nav`
     }
 
     > ul {
-      width: 40%;
+      width: 35%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -102,7 +107,7 @@ export const Nav = styled.nav`
         height: 14px;
         position: absolute;
         left: 4px;
-        bottom: 3px;
+        bottom: 2px;
         border: 1px solid skyblue;
         background-color: #000;
         -webkit-transition: 0.4s;
@@ -187,7 +192,7 @@ export const Nav = styled.nav`
       }
       .show-anime + ul {
         width: 100%;
-        height: 55%;
+        height: 300px;
         z-index: 90;
         position: fixed;
         top: 60px;
@@ -301,7 +306,7 @@ export const ViewportSection = styled.section`
     }
   }
   @media screen and (max-width: 635px) {
-    padding-top: 30px;
+    padding-top: 20px;
     > div {
       flex-direction: column;
 
@@ -309,13 +314,19 @@ export const ViewportSection = styled.section`
         width: 100%;
 
         h1 {
-          font-size: 26px;
+          font-size: 20px;
         }
         h3 {
+          font-size: 13px;
           text-align: center;
+        }
+        p {
+          font-size: 12px;
+          line-height: 1.5em;
         }
       }
       .author-photo {
+        width: 80%;
         margin: 0;
       }
     }
@@ -384,7 +395,7 @@ export const SkillSection = styled.section`
       > ul {
         li {
           width: 90px;
-          font-size: 12px;
+          font-size: 10px;
           letter-spacing: 1px;
 
           > img {
@@ -515,8 +526,9 @@ export const ProjectSection = styled.section`
     > div {
       width: 80%;
       height: 90%;
+      align-items: center;
       margin: auto;
-      padding: 20px 50px;
+      padding: 30px 30px;
       position: relative;
       top: 5%;
       z-index: 1500;
@@ -656,6 +668,67 @@ export const ProjectSection = styled.section`
             + ul {
               img {
                 max-width: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    > div {
+      .project-card {
+        > img + div {
+          button {
+            min-width: 100px;
+            font-size: 0.8em;
+          }
+        }
+        .project-title {
+          font-size: 1em;
+        }
+        .project-description {
+          font-size: 14px;
+        }
+        .btns {
+          a {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+
+    .project-detail-section {
+      > div {
+        > div:nth-of-type(2) {
+          .curr-title {
+            font-size: 24px;
+          }
+          .curr-description {
+            font-size: 16px;
+          }
+          .btns {
+            width: 80%;
+            margin: 30px auto 0;
+            a {
+              font-size: 0.8em;
+            }
+          }
+          .type {
+            font-size: 14px;
+          }
+          .tech-stack,
+          .responsibilities,
+          .features {
+            font-size: 14px;
+            + ul {
+              li {
+                font-size: 13px;
+              }
+
+              img {
+                max-width: 40px;
               }
             }
           }

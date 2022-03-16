@@ -4,7 +4,7 @@ import author from "./../Images/author.png";
 
 export const Viewport = ({ currTheme }) => {
   return (
-    <ViewportSection currTheme={currTheme}>
+    <ViewportSection id="viewport" currTheme={currTheme}>
       <div>
         <div className="author-photo">
           <img src={author} alt="AuthorPhoto" />
@@ -26,7 +26,7 @@ export const Viewport = ({ currTheme }) => {
               target="_blank"
               rel="noreferrer"
             >
-              Download Resume
+              Resume
             </a>
           </p>
         </div>
