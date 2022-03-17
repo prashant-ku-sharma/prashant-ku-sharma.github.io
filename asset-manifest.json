@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.02d4ded6.css",
-    "main.js": "/static/js/main.49595062.js",
+    "main.js": "/static/js/main.7cd3a691.js",
     "static/media/travel.png": "/static/media/travel.8186a3fde89780b89c88.png",
     "static/media/unbounce.png": "/static/media/unbounce.8243f6aae461cd435e37.png",
-    "static/media/Resume.pdf": "/static/media/Resume.e34de610085738122b15.pdf",
+    "static/media/Resume.pdf": "/static/media/Resume.23dd989337411c31ee5c.pdf",
     "static/media/policybazaar.png": "/static/media/policybazaar.4115ac061604ac5a37b4.png",
-    "static/media/author.png": "/static/media/author.bb821cee44d3e5a16b1b.png",
+    "static/media/author.png": "/static/media/author.02c8ba92cc8995bd8796.png",
     "static/media/sudoku.png": "/static/media/sudoku.d2c37cec5cbe12ff329c.png",
     "static/media/backend.svg": "/static/media/backend.bd348b332029745be0ec2d8d586b1ca3.svg",
     "static/media/frontend.svg": "/static/media/frontend.2104cfa437ed0cbd5d4a8aec8bba9a97.svg",
@@ -20,10 +20,10 @@
     "static/media/css.svg": "/static/media/css.4bfc125c3b5a4ceb7d4db657d59b6f23.svg",
     "static/media/html.svg": "/static/media/html.fe3de12e0604ec02d8ebbcc4f958b04c.svg",
     "main.02d4ded6.css.map": "/static/css/main.02d4ded6.css.map",
-    "main.49595062.js.map": "/static/js/main.49595062.js.map"
+    "main.7cd3a691.js.map": "/static/js/main.7cd3a691.js.map"
   },
   "entrypoints": [
     "static/css/main.02d4ded6.css",
-    "static/js/main.49595062.js"
+    "static/js/main.7cd3a691.js"
   ]
 }
