@@ -39,6 +39,7 @@ export const Navbar = ({ currTheme, handleTheme }) => {
                 type="checkbox"
                 name="themeSwitch"
                 onChange={handleTheme}
+                checked={currTheme === "light" ? true : false}
               />
               <span className="slider round"></span>
             </label>

@@ -63,7 +63,7 @@ export const Nav = styled.nav`
     }
 
     > ul {
-      width: 35%;
+      width: 40%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -192,7 +192,7 @@ export const Nav = styled.nav`
       }
       .show-anime + ul {
         width: 100%;
-        height: 300px;
+        height: 400px;
         z-index: 90;
         position: fixed;
         top: 60px;
@@ -528,7 +528,7 @@ export const ProjectSection = styled.section`
       height: 90%;
       align-items: center;
       margin: auto;
-      padding: 30px 30px;
+      padding: 50px 50px;
       position: relative;
       top: 5%;
       z-index: 1500;
@@ -539,6 +539,7 @@ export const ProjectSection = styled.section`
         width: 30px;
         height: 30px;
         position: absolute;
+        top: 20px;
         right: 30px;
         cursor: pointer;
         span {
@@ -640,20 +641,12 @@ export const ProjectSection = styled.section`
     }
   }
 
-  @media screen and (max-width: 1070px) {
-    position: relative;
-    > div {
-      .project-card {
-        width: 100%;
-      }
-    }
-
+  // @media screen and (max-width: 1200px) {
     .project-detail-section {
       overflow: auto;
 
       > div {
         height: auto;
-        padding: 50px 50px;
 
         > div:nth-of-type(2) {
           grid-template-columns: 100%;
@@ -672,6 +665,15 @@ export const ProjectSection = styled.section`
             }
           }
         }
+      }
+    }
+  // }
+
+  @media screen and (max-width: 1070px) {
+    position: relative;
+    > div {
+      .project-card {
+        width: 100%;
       }
     }
   }

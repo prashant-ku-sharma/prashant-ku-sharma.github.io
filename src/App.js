@@ -25,11 +25,20 @@ export const themes = {
   },
 };
 
-const App = () => {
-  const [currTheme, setCurrTheme] = useState("dark");
+const initialTheme = localStorage.getItem("507f1f77bcf86cd799439011") || "dark";
 
-  const handleTheme = () =>
-    currTheme === "light" ? setCurrTheme("dark") : setCurrTheme("light");
+const App = () => {
+  const [currTheme, setCurrTheme] = useState(initialTheme);
+
+  const handleTheme = () => {
+    if (currTheme === "light") {
+      setCurrTheme("dark");
+      localStorage.setItem("507f1f77bcf86cd799439011", "dark");
+      return;
+    }
+    setCurrTheme("light");
+    localStorage.setItem("507f1f77bcf86cd799439011", "light");
+  };
 
   return (
     <ThemeProvider theme={themes[currTheme]}>
