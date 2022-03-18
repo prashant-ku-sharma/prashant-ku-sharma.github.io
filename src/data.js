@@ -1,9 +1,10 @@
 import html from "./Images/svgs/html.svg";
 import css from "./Images/svgs/css.svg";
 import javascript from "./Images/svgs/javascript.svg";
-import react from "./Images/svgs/react.svg";
 import redux from "./Images/svgs/redux.svg";
 import mongodb from "./Images/svgs/mongodb.svg";
+import express from "./Images/svgs/express.svg";
+import react from "./Images/svgs/react.svg";
 import github from "./Images/svgs/github.svg";
 import reactrouter from "./Images/svgs/reactrouter.png";
 import frontend from "./Images/svgs/frontend.svg";
@@ -24,9 +25,10 @@ export const skillArray = {
     { title: "CSS", image: css },
     { title: "Javascript", image: javascript },
     { title: "Github", image: github },
+    { title: "MongoDB", image: mongodb },
+    { title: "Express", image: express },
     { title: "React", image: react },
     { title: "Redux", image: redux },
-    { title: "MongoDB", image: mongodb },
     { title: "React Router", image: reactrouter },
   ],
   proficiencies: [
@@ -80,7 +82,7 @@ export const projectArray = [
     image: travel,
     title: "Travel Clone",
     description: "An online travel package booking website.",
-    demoLink: "https://prashant-sharma-tws.github.io/travel",
+    demoLink: "https://prashant-sharma-tws.github.io/Travel/",
     codeLink: "https://github.com/ansari-saif/Travel",
     techStack: [
       { title: "HTML", image: html },

@@ -44,7 +44,12 @@ const ProjectCard = ({ item }) => {
           >
             Demo
           </a>
-          <a className="code" href={item.codeLink}>
+          <a
+            className="code"
+            href={item.codeLink}
+            target="_blank"
+            rel="noreferrer"
+          >
             Code
           </a>
         </div>
@@ -84,7 +89,12 @@ const ProjectDetail = ({ currInterest, setShow }) => {
               >
                 Demo
               </a>
-              <a className="code" href={currInterest.codeLink}>
+              <a
+                className="code"
+                href={currInterest.codeLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Code
               </a>
             </div>

@@ -366,6 +366,10 @@ export const SkillSection = styled.section`
           width: 100px;
           padding: 15px 0 25px;
         }
+        > img[alt="Express"] {
+          width: 100px;
+          padding: 15px 0 25px;
+        }
       }
     }
   }
