@@ -389,6 +389,10 @@ export const SkillSection = styled.section`
           > img[alt="React Router"] {
             padding: 0 0 25px;
           }
+          > img[alt="Express"] {
+            width: 80px;
+            padding: 15px 0 25px;
+          }
         }
       }
     }
@@ -408,6 +412,10 @@ export const SkillSection = styled.section`
           > img[alt="React Router"] {
             width: 60px;
             padding: 0 0 25px;
+          }
+          > img[alt="Express"] {
+            width: 60px;
+            padding: 15px 0 10px;
           }
         }
       }
