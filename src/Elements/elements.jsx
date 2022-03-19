@@ -438,7 +438,7 @@ export const ProjectSection = styled.section`
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      align-items: center;
+      align-items: start;
     }
 
     .project-card {
