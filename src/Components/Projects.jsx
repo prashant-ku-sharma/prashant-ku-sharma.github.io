@@ -28,7 +28,7 @@ const ProjectCard = ({ item }) => {
 
   return (
     <>
-      <div className="project-card">
+      <div className="reveal project-card">
         <img src={item.image} alt={item.title} />
         <div>
           <h3 className="project-title">{item.title}</h3>

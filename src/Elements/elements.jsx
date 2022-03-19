@@ -654,31 +654,31 @@ export const ProjectSection = styled.section`
   }
 
   // @media screen and (max-width: 1200px) {
-    .project-detail-section {
-      overflow: auto;
+  .project-detail-section {
+    overflow: auto;
 
-      > div {
-        height: auto;
+    > div {
+      height: auto;
 
-        > div:nth-of-type(2) {
-          grid-template-columns: 100%;
+      > div:nth-of-type(2) {
+        grid-template-columns: 100%;
 
-          .responsibilities,
-          .features {
-            + ul {
-              display: block;
-            }
+        .responsibilities,
+        .features {
+          + ul {
+            display: block;
           }
-          .tech-stack {
-            + ul {
-              img {
-                max-width: 50px;
-              }
+        }
+        .tech-stack {
+          + ul {
+            img {
+              max-width: 50px;
             }
           }
         }
       }
     }
+  }
   // }
 
   @media screen and (max-width: 1070px) {
@@ -783,7 +783,7 @@ export const ContactSection = styled.section`
     }
 
     .contact-list {
-      width: 500px;
+      width: 600px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -807,11 +807,17 @@ export const ContactSection = styled.section`
     }
   }
 
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 770px) {
     > div {
+      li {
+        span:nth-of-type(2) {
+          font-size: 15px;
+        }
+      }
       .contact-list {
-        width: 100%;
+        width: 200px;
         flex-direction: column;
+        align-items: start;
       }
       .social-list {
         width: 80%;

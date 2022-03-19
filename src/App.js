@@ -40,6 +40,22 @@ const App = () => {
     localStorage.setItem("507f1f77bcf86cd799439011", "light");
   };
 
+  window.addEventListener("scroll", () => {
+    const reveal = document.querySelectorAll(".reveal");
+
+    for (let x = 0; x < reveal.length; x++) {
+      let winHeight = window.innerHeight;
+      let revealTop = reveal[x].getBoundingClientRect().top;
+      let revealPoint = 50;
+
+      if (revealTop < winHeight - revealPoint) {
+        reveal[x].classList.add("active");
+      } else {
+        reveal[x].classList.remove("active");
+      }
+    }
+  });
+
   return (
     <ThemeProvider theme={themes[currTheme]}>
       <div className="App">

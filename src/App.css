@@ -35,3 +35,14 @@ li {
   margin: auto;
   text-align: center;
 }
+
+.reveal {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0.5;
+  transition: all 1s ease;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}

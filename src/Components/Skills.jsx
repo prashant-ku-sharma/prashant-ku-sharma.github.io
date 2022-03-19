@@ -21,7 +21,7 @@ const Technologies = () => {
   return (
     <ul className="skill-card-container">
       {skillArray.technologies.map((item) => (
-        <li key={item.title}>
+        <li className="reveal" key={item.title}>
           <img src={item.image} alt={item.title} />
           <h3 className="skill-title">{item.title}</h3>
         </li>
@@ -32,9 +32,9 @@ const Technologies = () => {
 
 const Proficiencies = () => {
   return (
-    <ul className="skill-card-container">
+    <ul className="reveal skill-card-container">
       {skillArray.proficiencies.map((item) => (
-        <li key={item.title}>
+        <li className="reveal" key={item.title}>
           <img src={item.image} alt={item.title} />
           <h3 className="skill-title">{item.title}</h3>
         </li>

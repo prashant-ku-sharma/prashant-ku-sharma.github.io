@@ -2,6 +2,7 @@ import React from "react";
 import { ContactSection, SubHeading } from "../Elements/elements";
 import email from "../Images/icons/email.png";
 import telephone from "../Images/icons/telephone.png";
+import location from "../Images/icons/location.png";
 import { contactArray } from "../data";
 
 export const Contact = ({ currTheme }) => {
@@ -28,6 +29,14 @@ export const Contact = ({ currTheme }) => {
                 <img src={telephone} alt="telephone" width="30px" />
               </span>
               <span>7987343655</span>
+            </a>
+          </li>
+          <li key="jabalpur">
+            <a target="_blank" rel="noreferrer" href="map">
+              <span className="location">
+                <img src={location} alt="location" width="30px" />
+              </span>
+              <span>Jabalpur, India</span>
             </a>
           </li>
         </ul>
