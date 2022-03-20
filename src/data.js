@@ -121,19 +121,19 @@ export const contactArray = [
   {
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/prashant-kumar-sharma-/",
-    icon: <BsLinkedin size="30px" fill="#0077b7" />,
+    icon: <BsLinkedin size="35px" fill="#0077b7" />,
     iconClass: "linkedin",
   },
   {
     title: "Github",
     link: "https://github.com/Prashant-Sharma-TWS/",
-    icon: <BsGithub size="30px" />,
+    icon: <BsGithub size="35px" />,
     iconClass: "github",
   },
   {
     title: "HackerRank",
     link: "https://www.hackerrank.com/Prashant_Sharma_",
-    icon: <FaHackerrank size="30px" fill="#26b758" />,
+    icon: <FaHackerrank size="35px" fill="#26b758" />,
     iconClass: "hackerrank",
   },
 ];

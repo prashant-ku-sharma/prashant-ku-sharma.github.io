@@ -797,13 +797,12 @@ export const ContactSection = styled.section`
       align-items: center;
     }
 
-    .email {
-    }
-    .telephone {
-    }
-    .linkedin {
-    }
-    .github {
+    .linkedin:hover,
+    .github:hover,
+    .hackerrank:hover {
+      opacity: 0.5;
+      width: 32px;
+      transition: all 0.3s ease-in-out;
     }
   }
 
