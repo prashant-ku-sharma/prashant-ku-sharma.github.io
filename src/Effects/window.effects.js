@@ -22,7 +22,7 @@
       y = e.pageY;
     cursor.style.top = y + "px";
     cursor.style.left = x + "px";
-    cursor.style.display = "block";
+    if (window.innerWidth > 770) cursor.style.display = "block";
   });
 
   window.addEventListener("mouseout", (e) => {
