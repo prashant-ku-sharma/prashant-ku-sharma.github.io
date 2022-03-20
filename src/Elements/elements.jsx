@@ -27,7 +27,9 @@ export const SubHeading = styled.h2`
 export const Nav = styled.nav`
   width: 100%;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
+  left: 0;
   z-index: 100;
   background-color: ${(props) => props.theme.navbg};
   box-shadow: 0px 0px 8px black;
