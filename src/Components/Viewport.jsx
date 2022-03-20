@@ -1,8 +1,10 @@
 import React from "react";
+import { typing } from "../Effects/window.effects";
 import { ViewportSection } from "../Elements/elements";
 import author from "./../Images/author.png";
 
 export const Viewport = ({ currTheme }) => {
+  typing();
   return (
     <ViewportSection id="viewport" currTheme={currTheme}>
       <div>
@@ -10,7 +12,10 @@ export const Viewport = ({ currTheme }) => {
           <img src={author} alt="AuthorPhoto" />
         </div>
         <div className="author-description">
-          <h3>Full Stack Web Developer</h3>
+          <div className="intro">
+            <h5>I'm a</h5>
+            <h5 className="typing">Full Stack Developer</h5>
+          </div>
           <h1>Prashant Sharma</h1>
           <p>
             An enthusiastic, result-oriented &amp; innovative Full Stack Web

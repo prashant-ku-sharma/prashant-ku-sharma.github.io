@@ -24,9 +24,30 @@
     cursor.style.left = x + "px";
     cursor.style.display = "block";
   });
-  
+
   window.addEventListener("mouseout", (e) => {
     const cursor = document.querySelector(".cursor");
     cursor.style.display = "none";
   });
 })();
+
+export function typing() {
+  const texts = ["Developer", "Learner", "Coder"];
+  let count = 0,
+    index = 0,
+    currentText = "",
+    letter = "";
+
+  (function type() {
+    if (count === texts.length) count = 0;
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+    if (document.querySelector(".typing"))
+      document.querySelector(".typing").innerHTML = letter;
+    if (letter.length === currentText.length) {
+      count++;
+      index = 0;
+    }
+    setTimeout(type, 300);
+  })();
+}

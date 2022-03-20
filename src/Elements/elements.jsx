@@ -242,12 +242,6 @@ export const ViewportSection = styled.section`
         letter-spacing: 2px;
         color: ${(props) => props.theme.fontColor};
       }
-      h3 {
-        font-size: 15px;
-        margin: 0 0 30px;
-        letter-spacing: 2px;
-        color: #207398;
-      }
       p {
         letter-spacing: 2px;
         line-height: 2em;
@@ -285,14 +279,48 @@ export const ViewportSection = styled.section`
     }
   }
 
+  .intro,
+  .typing {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    letter-spacing: 3px;
+    color: #207398;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  .intro {
+    margin: 0 0 30px;
+  }
+  .typing {
+    position: relative;
+    left: 10px;
+  }
+  .typing::after {
+    content: "";
+    width: 2px;
+    height: 80%;
+    position: absolute;
+    right: -5px;
+    background-color: #777;
+    animation: blink 0.8s ease infinite;
+    transition: all 0.5s ease-in-out infinite;
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   @media screen and (max-width: 770px) {
     > div {
       .author-description {
         h1 {
           font-size: 30px;
-        }
-        h3 {
-          font-size: 15px;
         }
         p {
           font-size: 14px;
@@ -316,9 +344,9 @@ export const ViewportSection = styled.section`
         h1 {
           font-size: 20px;
         }
-        h3 {
-          font-size: 13px;
-          text-align: center;
+        .intro {
+          width: 160px;
+          margin: 0 auto 30px;
         }
         p {
           font-size: 12px;

@@ -6,7 +6,7 @@ import { Projects } from "./Components/Projects";
 import { Skills } from "./Components/Skills";
 import { Viewport } from "./Components/Viewport";
 import "./App.css";
-import './Effects/window.effects'
+import "./Effects/window.effects";
 import { ThemeProvider } from "styled-components";
 
 export const themes = {
