@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { typing } from "../Effects/window.effects";
 import { ViewportSection } from "../Elements/elements";
 import author from "./../Images/author.png";
 
 export const Viewport = ({ currTheme }) => {
-  typing();
+  useEffect(typing, []);
+
   return (
     <ViewportSection id="viewport" currTheme={currTheme}>
       <div>

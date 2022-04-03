@@ -15,6 +15,7 @@ import sudoku from "./Images/pngs/sudoku.png";
 import unbounce from "./Images/pngs/unbounce.png";
 import travel from "./Images/pngs/travel.png";
 import policybazaar from "./Images/pngs/policybazaar.png";
+import bigbasket from "./Images/pngs/bigbasket.png";
 
 import { FaHackerrank } from "react-icons/fa";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -40,6 +41,51 @@ export const skillArray = {
 
 export const projectArray = [
   {
+    image: bigbasket,
+    title: "BigBasket Clone",
+    description: "An online supermarket for all your daily needs.",
+    demoLink: "https://prashant-sharma-tws.github.io/big-basket/",
+    codeLink: "https://github.com/Prashant-Sharma-TWS/big-basket",
+    techStack: [
+      { title: "HTML", image: html },
+      { title: "CSS", image: css },
+      { title: "Javascript", image: javascript },
+      { title: "Github", image: github },
+      { title: "MongoDB", image: mongodb },
+      { title: "React", image: react },
+      { title: "Redux", image: redux },
+    ],
+    duration: "6 days",
+    type: "A collaborative project built with 3 other developers",
+    responsibilities: [
+      "Developed Home page",
+      "Login/Signup using redux",
+      "Searching products on user's search term.",
+    ],
+  },
+  {
+    image: policybazaar,
+    title: "Policybazaar Clone",
+    description: "An online mutli insurance company provider.",
+    demoLink: "https://prashant-sharma-tws.github.io/policybazaar/",
+    codeLink: "https://github.com/Prashant-Sharma-TWS/policybazaar",
+    techStack: [
+      { title: "HTML", image: html },
+      { title: "CSS", image: css },
+      { title: "Javascript", image: javascript },
+      { title: "Github", image: github },
+      { title: "React", image: react },
+      { title: "Redux", image: redux },
+    ],
+    duration: "6 days",
+    type: "A collaborative project built by a team of 4 under 4 days.",
+    responsibilities: [
+      "User sign-in and login page.",
+      "Developed the Insurance and Quotes page.",
+      "Integrated the frontend with company database.",
+    ],
+  },
+  {
     image: unbounce,
     title: "Unbounce Clone",
     description: "An online landing page building website.",
@@ -50,32 +96,12 @@ export const projectArray = [
       { title: "CSS", image: css },
       { title: "Javascript", image: javascript },
     ],
+    duration: "6 days",
     type: "A collaborative project built with 2 other developers",
     responsibilities: [
       "User sign-in and login page.",
       "Developed the Landing page.",
       "Use of animations for better user-experience.",
-    ],
-  },
-  {
-    image: policybazaar,
-    title: "Policybazaar Clone",
-    description: "An online mutli insurance company provider.",
-    techStack: [
-      { title: "HTML", image: html },
-      { title: "CSS", image: css },
-      { title: "Javascript", image: javascript },
-      { title: "Github", image: github },
-      { title: "React", image: react },
-      { title: "Redux", image: redux },
-    ],
-    demoLink: "https://prashant-sharma-tws.github.io/policybazaar/",
-    codeLink: "https://github.com/Prashant-Sharma-TWS/policybazaar",
-    type: "A collaborative project built by a team of 4 under 4 days.",
-    responsibilities: [
-      "User sign-in and login page.",
-      "Developed the Insurance and Quotes page.",
-      "Integrated the frontend with company database.",
     ],
   },
   {
@@ -89,6 +115,7 @@ export const projectArray = [
       { title: "CSS", image: css },
       { title: "Javascript", image: javascript },
     ],
+    duration: "6 days",
     type: "A collaborative project built with 3 other developers",
     responsibilities: [
       "Developed the Blog page.",
@@ -100,14 +127,15 @@ export const projectArray = [
     title: "Sudoku",
     description:
       "A sudoku challenge for users, where they can solve and get them solved.",
+    demoLink: "https://prashant-sharma-tws.github.io/sudoku/",
+    codeLink: "https://github.com/Prashant-Sharma-TWS/sudoku",
     techStack: [
       { title: "HTML", image: html },
       { title: "CSS", image: css },
       { title: "Javascript", image: javascript },
       { title: "React", image: react },
     ],
-    demoLink: "https://prashant-sharma-tws.github.io/sudoku/",
-    codeLink: "https://github.com/Prashant-Sharma-TWS/sudoku",
+    duration: "2 days",
     type: "A solo project.",
     features: [
       "User can solve a puzzle.",
