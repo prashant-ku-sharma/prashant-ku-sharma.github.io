@@ -44,7 +44,7 @@ export const projectArray = [
     image: bigbasket,
     title: "BigBasket Clone",
     description: "An online supermarket for all your daily needs.",
-    demoLink: "https://prashant-sharma-tws.github.io/big-basket/",
+    demoLink: "https://big-basket-1.netlify.app/",
     codeLink: "https://github.com/Prashant-Sharma-TWS/big-basket",
     techStack: [
       { title: "HTML", image: html },
