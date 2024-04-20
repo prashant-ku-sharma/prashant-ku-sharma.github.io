@@ -1,6 +1,6 @@
 # Prashant Sharma
 
-<a href="https://prashant-sharma-tws.github.io" target="_blank">Click to see Portfolio</a>
+<a href="https://prashant-ku-sharma.github.io" target="_blank">Click to see Portfolio</a>
 
 ## Tech Stack used:
 <ul>
