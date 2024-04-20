@@ -148,13 +148,13 @@ export const projectArray = [
 export const contactArray = [
   {
     title: "LinkedIn",
-    link: "https://www.linkedin.com/in/prashant-kumar-sharma-/",
+    link: "https://www.linkedin.com/in/prashant-ku-sharma",
     icon: <BsLinkedin size="35px" fill="#0077b7" />,
     iconClass: "linkedin",
   },
   {
     title: "Github",
-    link: "https://github.com/Prashant-Sharma-TWS/",
+    link: "https://github.com/prashant-ku-sharma",
     icon: <BsGithub size="35px" />,
     iconClass: "github",
   },
