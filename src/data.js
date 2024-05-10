@@ -45,7 +45,7 @@ export const projectArray = [
     title: "BigBasket Clone",
     description: "An online supermarket for all your daily needs.",
     demoLink: "https://big-basket-1.netlify.app/",
-    codeLink: "https://github.com/Prashant-Sharma-TWS/big-basket",
+    codeLink: "https://github.com/prashant-ku-sharma/big-basket",
     techStack: [
       { title: "HTML", image: html },
       { title: "CSS", image: css },
@@ -67,8 +67,8 @@ export const projectArray = [
     image: policybazaar,
     title: "Policybazaar Clone",
     description: "An online mutli insurance company provider.",
-    demoLink: "https://prashant-sharma-tws.github.io/policybazaar/",
-    codeLink: "https://github.com/Prashant-Sharma-TWS/policybazaar",
+    demoLink: "https://prashant-ku-sharma.github.io/policybazaar/",
+    codeLink: "https://github.com/prashant-ku-sharma/policybazaar",
     techStack: [
       { title: "HTML", image: html },
       { title: "CSS", image: css },
@@ -90,7 +90,7 @@ export const projectArray = [
     title: "Unbounce Clone",
     description: "An online landing page building website.",
     codeLink: "https://github.com/nehachatse/sulphur",
-    demoLink: "https://prashant-sharma-tws.github.io/sulphur",
+    demoLink: "https://prashant-ku-sharma.github.io/sulphur",
     techStack: [
       { title: "HTML", image: html },
       { title: "CSS", image: css },
@@ -108,7 +108,7 @@ export const projectArray = [
     image: travel,
     title: "Travel Clone",
     description: "An online travel package booking website.",
-    demoLink: "https://prashant-sharma-tws.github.io/Travel/",
+    demoLink: "https://prashant-ku-sharma.github.io/Travel/",
     codeLink: "https://github.com/ansari-saif/Travel",
     techStack: [
       { title: "HTML", image: html },
@@ -127,8 +127,8 @@ export const projectArray = [
     title: "Sudoku",
     description:
       "A sudoku challenge for users, where they can solve and get them solved.",
-    demoLink: "https://prashant-sharma-tws.github.io/sudoku/",
-    codeLink: "https://github.com/Prashant-Sharma-TWS/sudoku",
+    demoLink: "https://prashant-ku-sharma.github.io/sudoku/",
+    codeLink: "https://github.com/prashant-ku-sharma/sudoku",
     techStack: [
       { title: "HTML", image: html },
       { title: "CSS", image: css },
