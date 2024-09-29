@@ -28,7 +28,7 @@ export const Viewport = ({ currTheme }) => {
           </p>
           <p className="resume">
             <a
-              href={require("./../Images/Resume.pdf")}
+              href="https://docs.google.com/document/d/14fKtS6-ZX5k6lJtpu6vdc459EkUn1iiwPTubwe8ZT5A/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >

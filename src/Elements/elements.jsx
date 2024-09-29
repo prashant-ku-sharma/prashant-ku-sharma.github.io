@@ -363,6 +363,85 @@ export const ViewportSection = styled.section`
   }
 `;
 
+export const ExperienceSection = styled.section`
+  width: 100%;
+  padding: 50px 0;
+  color: ${(props) => props.theme.fontColor};
+  background-color: ${(props) => props.theme.bgColor};
+
+  .organization-card-wrapper {
+    width: 85%;
+    margin: auto;
+    padding-left: 8rem;
+  }
+
+  .organization-card {
+    position: relative;
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 16px;
+    line-height: 1.6;
+    border-radius: 10px;
+    border: 2px solid ${(props) => props.theme.cardborder};
+  }
+  .organization-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .organization-timeline {
+    position: absolute;
+    top: 0;
+    left: -6rem;
+    padding: 14px 10px;
+    border-radius: 50%;
+    border: 2px solid #3498db;
+    z-index: 1;
+    background: ${(props) => props.theme.bgColor};
+  }
+  .organization-card::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(-6rem + 31px);
+    background: linear-gradient(#3498db 80%, rgba(52, 152, 219, 0));
+    z-index: 0;
+  }
+  .organization-name {
+    font-size: 20px;
+  }
+  .my-role {
+    color: ${(props) => props.theme.myRoleColor};
+  }
+
+  ul {
+    margin-top: 8px;
+    margin-left: 1rem;
+  }
+
+  li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: ${(props) => props.theme.listItemColor};
+    list-style-type: circle;
+  }
+
+  @media screen and (max-width: 770px) {
+    .organization-timeline,
+    .organization-card::before {
+      display: none;
+    }
+    .organization-card-wrapper {
+      padding-left: 0;
+    }
+  }
+`;
+
 export const SkillSection = styled.section`
   width: 100%;
   padding: 50px 0;

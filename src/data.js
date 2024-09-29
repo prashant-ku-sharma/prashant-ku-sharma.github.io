@@ -20,6 +20,24 @@ import bigbasket from "./Images/pngs/bigbasket.png";
 import { FaHackerrank } from "react-icons/fa";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
+export const experienceArray = [
+  {
+    organization: "AgroStar",
+    role: "Software Engineer",
+    startMonth: "April",
+    startYear: "2022",
+    endMonth: "Present",
+    endYear: "",
+    responsibilities: [
+      "Actively contributing to the development of multiple products within the Organization",
+      "Farmer App - Personalized crop information, including videos, issues, and products, to stay informed at each stage of a crop and frontend performance improvements.",
+      "Saathi App - Built DVS (Delivery via Store) and IPT (Inter Party Transfer) to address delivery and return infrastructure costs, respectively. Personalized Shop/Dukaan page for Saathi stores to showcase store information and inventory.",
+      "Other - Actively doing Library upgrades and code optimizations/reviews to improve frontend performance.",
+      "Programmatic media - Personalized greetings and promotions capability for Saathi stores using ImageKit/Cloudinary, ~200k+ shares.",
+    ],
+  },
+];
+
 export const skillArray = {
   technologies: [
     { title: "HTML", image: html },

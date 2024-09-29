@@ -11,8 +11,15 @@
   <li>Styled Components</li>
 </ul>
 
-## Quick view of Portfolio
-<img src="https://user-images.githubusercontent.com/63180404/158993341-d1c4a6df-35ed-46d9-a190-316c768f0548.png" alt="portfolio-img" />
+## Setup:
+1. Clone the repo
+3. **npm install**
+3. **npm start**
 
-### Contributer
+## App Build/Deploy
+
+1. **npm run deploy** (it will make a build and publish build to github pages)
+
+
+### Author
 Prashant Sharma

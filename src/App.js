@@ -8,6 +8,7 @@ import { Viewport } from "./Components/Viewport";
 import "./App.css";
 import "./Effects/window.effects";
 import { ThemeProvider } from "styled-components";
+import { Experience } from "./Components/Experience";
 
 export const themes = {
   light: {
@@ -16,6 +17,8 @@ export const themes = {
     navbg: "#fff",
     cardbg: "#fff",
     cardborder: "#e5e5e5",
+    listItemColor: "#333",
+    myRoleColor: "#74808a",
   },
   dark: {
     bgColor: "#222",
@@ -23,6 +26,8 @@ export const themes = {
     navbg: "#1a1a1a",
     cardbg: "#333",
     cardborder: "#444",
+    listItemColor: "#ddd",
+    myRoleColor: "#adbecd",
   },
 };
 
@@ -47,6 +52,7 @@ const App = () => {
         <div>
           <Navbar handleTheme={handleTheme} currTheme={currTheme} />
           <Viewport currTheme={currTheme} />
+          <Experience currTheme={currTheme} />
           <Skills currTheme={currTheme} />
           <Projects currTheme={currTheme} />
           <Contact currTheme={currTheme} />

@@ -25,6 +25,9 @@ export const Navbar = ({ currTheme, handleTheme }) => {
             <a href="#viewport">Home</a>
           </li>
           <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
             <a href="#skills">Skills</a>
           </li>
           <li>
