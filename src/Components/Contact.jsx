@@ -31,12 +31,12 @@ export const Contact = ({ currTheme }) => {
               <span>7987343655</span>
             </a>
           </li>
-          <li key="jabalpur">
+          <li key="pune">
             <a target="_blank" rel="noreferrer" href="map">
               <span className="location">
                 <img src={location} alt="location" width="30px" />
               </span>
-              <span>Jabalpur, India</span>
+              <span>Pune, India</span>
             </a>
           </li>
         </ul>

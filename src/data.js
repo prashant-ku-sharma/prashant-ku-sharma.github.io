@@ -29,12 +29,18 @@ export const experienceArray = [
     endMonth: "Present",
     endYear: "",
     responsibilities: [
-      "Actively contributing to the development of multiple products within the Organization",
-      "Farmer App - Personalized crop information, including videos, issues, and products, to stay informed at each stage of a crop and frontend performance improvements.",
-      "Saathi App - Built DVS (Delivery via Store) and IPT (Inter Party Transfer) to address delivery and return infrastructure costs, respectively. Personalized Shop/Dukaan page for Saathi stores to showcase store information and inventory.",
-      "Other - Actively doing Library upgrades and code optimizations/reviews to improve frontend performance.",
-      "Programmatic media - Personalized greetings and promotions capability for Saathi stores using ImageKit/Cloudinary, ~200k+ shares.",
-    ],
+  "Contributed to the development and scaling of multiple high-impact products across the organization, focusing on performance, usability, and business outcomes.",
+
+  "Owned and enhanced the Farmer App frontend, delivering crop-stage–specific personalized content (videos, advisory, product recommendations), improving user engagement and retention by 30%+, while optimizing performance for low-end devices.",
+
+  "Designed and built key logistics features in Saathi App, including Delivery via Store (DVS) and Inter Party Transfer (IPT), reducing delivery and return costs and driving adoption across 1,000+ partner stores.",
+
+  "Developed personalized Shop/Dukaan pages enabling store-level promotions, increasing partner-driven customer engagement and adoption by 40%.",
+
+  "Led frontend performance optimization initiatives, including library upgrades, component refactoring, and rendering improvements, significantly improving load-time stability and user experience.",
+
+  "Built programmatic media personalization using ImageKit/Cloudinary, enabling 200k+ personalized shares for greetings and promotional campaigns, boosting organic reach."
+],
   },
 ];
 

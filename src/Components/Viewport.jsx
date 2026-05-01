@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { typing } from "../Effects/window.effects";
 import { ViewportSection } from "../Elements/elements";
-import author from "./../Images/author.png";
+import author from "./../Images/author3.jpeg";
 
 export const Viewport = ({ currTheme }) => {
   useEffect(typing, []);
@@ -19,16 +19,11 @@ export const Viewport = ({ currTheme }) => {
           </div>
           <h1>Prashant Sharma</h1>
           <p>
-            An enthusiastic, result-oriented &amp; innovative Full Stack Web
-            Developer. Highly skilled in Technical skills across MERN with a
-            great hold on Data Structures &amp; Algorithms. Capable of writing
-            clean, reusable &amp; optimized code. Adaptable to team environment,
-            proficient in remote collaboration &amp; committed to achieving
-            organizational goals.
+            Results-driven Software Engineer with 4+ years of experience specializing in React and modern JavaScript ecosystems, delivering high-impact, scalable applications. Led key frontend initiatives at AgroStar, driving 30%+ engagement growth and significant performance improvements. Adept at architecting clean, efficient systems and collaborating across teams to ship reliable, user-focused products.
           </p>
           <p className="resume">
             <a
-              href="https://docs.google.com/document/d/14fKtS6-ZX5k6lJtpu6vdc459EkUn1iiwPTubwe8ZT5A/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1Rhn-o_aGHIYPwTE5Eu7AKwMNl_UrX1Ks/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
